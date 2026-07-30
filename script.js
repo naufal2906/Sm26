@@ -1,10 +1,34 @@
-// Data Sample Wonderkid SM26
+// Data Base Wonderkids & Star Players SM26
 const players = [
-    { name: "Endrick", pos: "ST", age: 19, rating: 76, pot: 90 },
-    { name: "Lamine Yamal", pos: "AMR", age: 18, rating: 81, pot: 93 },
-    { name: "Warren Zaïre-Emery", pos: "MC", age: 19, rating: 78, pot: 89 },
-    { name: "Pau Cubarsí", pos: "DC", age: 18, rating: 75, pot: 88 },
-    { name: "Jorrel Hato", pos: "DL/DC", age: 19, rating: 74, pot: 87 }
+    // --- FORWARD & WINGER ---
+    { name: "Lamine Yamal", pos: "AMR/WBR", age: 18, rating: 82, pot: 94 },
+    { name: "Endrick", pos: "ST", age: 19, rating: 77, pot: 91 },
+    { name: "Arda Güler", pos: "AMC/AMR", age: 20, rating: 79, pot: 90 },
+    { name: "Evan Ferguson", pos: "ST", age: 20, rating: 78, pot: 89 },
+    { name: "Mathys Tel", pos: "ST/AML", age: 20, rating: 77, pot: 88 },
+    { name: "Kenan Yildiz", pos: "AML/AMC", age: 20, rating: 76, pot: 88 },
+    { name: "Roony Bardghji", pos: "AMR", age: 19, rating: 74, pot: 87 },
+    { name: "Estêvão Willian", pos: "AMR", age: 18, rating: 73, pot: 90 },
+    { name: "Claudio Echeverri", pos: "AMC", age: 19, rating: 72, pot: 88 },
+    { name: "Francesco Camarda", pos: "ST", age: 17, rating: 68, pot: 89 },
+
+    // --- MIDFIELDER ---
+    { name: "Jude Bellingham", pos: "AMC/MC", age: 22, rating: 88, pot: 95 },
+    { name: "Jamal Musiala", pos: "AMC/AML", age: 22, rating: 86, pot: 93 },
+    { name: "Gavi", pos: "MC/AMC", age: 20, rating: 83, pot: 92 },
+    { name: "Warren Zaïre-Emery", pos: "MC/DM", age: 19, rating: 80, pot: 90 },
+    { name: "João Neves", pos: "DM/MC", age: 20, rating: 79, pot: 89 },
+    { name: "Kobbie Mainoo", pos: "MC/DM", age: 20, rating: 78, pot: 89 },
+    { name: "Archie Gray", pos: "MC/RB", age: 19, rating: 74, pot: 87 },
+    { name: "Lucas Bergvall", pos: "MC", age: 19, rating: 73, pot: 86 },
+
+    // --- DEFENDER & GOALKEEPER ---
+    { name: "Pau Cubarsí", pos: "DC", age: 18, rating: 77, pot: 90 },
+    { name: "Jorrel Hato", pos: "DL/DC", age: 19, rating: 76, pot: 88 },
+    { name: "Leny Yoro", pos: "DC", age: 19, rating: 78, pot: 89 },
+    { name: "Rico Lewis", pos: "RB/DM", age: 20, rating: 77, pot: 87 },
+    { name: "Alejandro Balde", pos: "DL", age: 21, rating: 81, pot: 89 },
+    { name: "Guillaume Restes", pos: "GK", age: 20, rating: 76, pot: 88 }
 ];
 
 // Menampilkan Data Pemain ke Tabel
