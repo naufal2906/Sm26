@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SM26 Analytics Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Library untuk Chart Radar -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>⚽ SM26 ANALYTICS HUB</h1>
+    </header>
+
+    <nav>
+        <button onclick="showTab('wonderkids')">⭐ Wonderkids</button>
+        <button onclick="showTab('radar')">📊 Radar Atribut</button>
+        <button onclick="showTab('calculator')">🧮 Kalkulator Taktik</button>
+    </nav>
+
+    <main>
+        <!-- TAB 1: DAFTAR WONDERKID -->
+        <section id="wonderkids" class="tab-content active">
+            <h2>Daftar Wonderkid Rekomendasi (2026)</h2>
+            <input type="text" id="searchInput" onkeyup="filterPlayers()" placeholder="🔍 Cari nama pemain atau posisi...">
+            <table id="playerTable">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Posisi</th>
+                        <th>Usia</th>
+                        <th>Rating Awal</th>
+                        <th>Potensi</th>
+                    </tr>
+                </thead>
+                <tbody id="playerBody">
+                    <!-- Data pemain diisi oleh JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- TAB 2: RADAR CHART -->
+        <section id="radar" class="tab-content">
+            <h2>Analisis Radar Atribut Pemain</h2>
+            <div class="chart-container">
+                <canvas id="attributeRadar"></canvas>
+            </div>
+        </section>
+
+        <!-- TAB 3: KALKULATOR TAKTIK -->
+        <section id="calculator" class="tab-content">
+            <h2>Kalkulator Kecocokan Taktik</h2>
+            <div class="calc-form">
+                <label>Gaya Penyerangan:</label>
+                <select id="tacticStyle">
+                    <option value="wing">Sayap Cepat (Wing Play)</option>
+                    <option value="possession">Penguasaan Bola (Tiki-Taka)</option>
+                    <option value="counter">Serangan Balik (Counter Attack)</option>
+                </select>
+
+                <label>Pace Rata-rata Winger/Penyerang Kamu:</label>
+                <input type="number" id="avgPace" placeholder="Contoh: 85">
+
+                <button onclick="calculateTactic()">Hitung Skor Efektivitas</button>
+                <div id="calcResult" class="result-box"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
